@@ -29,7 +29,7 @@ These inputs populate a user_config struct that is depended upon by all other co
 The requested number of active sub-systems are spawned/dynamically allocated for the simulation according to the user_config.
 
 Then the simulation begins - with fan controller initially disabled - and then enabled after a configured delay time.
-Live system tempertures (represented as decimal float and 4-byte hex vals) and fan speeds (duty_cycle 0-100% and associated uint32_t pwm val) are periodically reported to the console.
+Live system temperatures (represented as decimal float and 4-byte hex vals) and fan speeds (duty_cycle 0-100% and associated uint32_t pwm val) are periodically reported to the console.
 
 Once the simulation has run for the configured amount of time it ends and the application closes - it must be restarted to run another simulation.
 
